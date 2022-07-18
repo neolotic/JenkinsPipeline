@@ -1,11 +1,15 @@
 pipeline {
-	agent any 
-	stages{
-	stage("Print message")
-		steps{
-			sh "echo hi! I’m Jenkins Pipeline"
-			}
-
-		}
-
+    agent any
+    stages {
+        stage('Example') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+    post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
+    }
 }
