@@ -1,9 +1,9 @@
 pipeline {
 	agent any 
 	stages{
-	stage (‘My first Jenkins Pipeline’)
+	stage (‘Print message’)
 		steps{
-			sh echo "hi! I’m Jenkins Pipeline"
+			sh "echo hi! I’m Jenkins Pipeline"
 			}
 
 		}
